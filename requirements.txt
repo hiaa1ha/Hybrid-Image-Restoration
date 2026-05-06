@@ -1,7 +1,0 @@
-torch>=1.8.0
-torchvision
-numpy
-scipy
-pillow
-opencv-python
-tqdm
