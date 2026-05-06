@@ -4,48 +4,6 @@ ARANet-B is a U-Net-style image restoration network that combines **depthwise-se
 
 ---
 
-## Project structure
-
-```
-aranet_b/
-├── main_train_aranet_b.py      # Training entry point
-├── main_test_aranet_b.py       # Inference / evaluation entry point
-├── requirements.txt
-│
-├── options/
-│   └── train_aranet_b.json     # All training hyper-parameters
-│
-├── models/
-│   ├── network_aranet_b.py     # ARANet-B architecture
-│   ├── select_network.py       # Network factory (routes net_type -> class)
-│   ├── select_model.py         # Model factory (routes model -> training wrapper)
-│   ├── model_plain.py          # Standard single-generator training loop
-│   ├── model_base.py           # Base model class
-│   ├── basicblock.py           # Shared building blocks
-│   ├── loss.py                 # Loss functions
-│   └── loss_ssim.py            # SSIM loss
-│
-├── data/
-│   ├── dataset_fdncnn.py       # Dataset loader (noisy/clean pairs with noise-level map)
-│   └── select_dataset.py       # Dataset factory
-│
-├── utils/
-│   ├── utils_image.py          # Image I/O, PSNR, SSIM helpers
-│   ├── utils_logger.py         # Logging setup
-│   ├── utils_option.py         # JSON option parsing
-│   ├── utils_dist.py           # Distributed training helpers
-│   └── utils_model.py          # Test-time augmentation (x8 ensemble)
-│
-├── trainsets/
-│   └── trainH/                 # ← Place your training images here
-│
-├── testsets/
-│   └── set12/                  # 12 standard grayscale test images (included)
-│
-└── model_zoo/                  # ← Place trained .pth weight files here
-```
-
----
 
 ## Installation
 
