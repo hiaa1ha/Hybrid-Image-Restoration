@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "Spatial-Spectral Prior Learning for Inverse Imaging via Variational Optimization"
+type: software
+authors:
+  - name: "ARANet contributors"
+repository-code: "https://github.com/hiaa1ha/Hybrid-Image-Restoration"
+version: "1.0.1"
+date-released: "2026-05-07"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20051390"
+    description: "Archived software release on Zenodo."
